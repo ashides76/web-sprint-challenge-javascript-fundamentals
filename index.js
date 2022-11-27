@@ -154,9 +154,12 @@ console.log(consume("What's worng", ' with this?', consumeCBFun));
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
-  }
+function add(num1, num2){
+  return consumeCBFun(num1, num2);
+}
+console.log(add(2, 9, consumeCBFun));
+console.log(add("what's wrong", ' with this?', consumeCBFun));
+
 
 
 /* Use multiply to do the following:
