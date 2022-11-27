@@ -137,10 +137,15 @@ const zooAnimals = [
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+    return cb(a, b);
   }
- 
+  function consumeCBFun (a, b) {
+    return a + b;
+  }
+console.log(consume(4, 6, consumeCBFun));
+console.log(consume("What's worng", ' with this?', consumeCBFun));
+
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
