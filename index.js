@@ -167,10 +167,13 @@ console.log(add("what's wrong", ' with this?', consumeCBFun));
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
-  }
-
+function multiply(a, b){
+  return multiplyCB(a, b);
+}
+function multiplyCB (a, b) {
+  return a * b;
+}
+console.log(multiply(6, 6, multiplyCB))
 
  /* Use greeting to do the following:
 1. Receive two strings (a first name and last name) as an argument that are passed in from its first and second parameters
