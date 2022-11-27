@@ -143,6 +143,7 @@ const zooAnimals = [
   function consumeCBFun (a, b) {
     return a + b;
   }
+
 console.log(consume(4, 6, consumeCBFun));
 console.log(consume("What's worng", ' with this?', consumeCBFun));
 
@@ -181,16 +182,19 @@ console.log(multiply(6, 6, multiplyCB))
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(str1, str2){
+  return `Hello ${str1} ${str2}, nice to meet you!`
   }
+console.log(greeting('Ashish', 'Desai'))
+
+
   
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
