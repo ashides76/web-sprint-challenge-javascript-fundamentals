@@ -17,7 +17,7 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// myFunction scope answers the question where are our functions and variables avalible to us. In this case, inner function (nestedFunction) reaches out of it's scope to grab varible(internal) defined in an outer fuction whish is part of the myFunction scope.  
 
 
 
@@ -30,10 +30,14 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let sum = 0;
+    for (let i = 0; i <= number; i++) {
+      sum += i;
+    }
+    return sum;
   }
+console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -62,8 +66,8 @@ const zooAnimals = [
 
   function animalNames(/*Your Code Here*/){
     /*Your Code Here*/
-  }
-  
+}
+
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
