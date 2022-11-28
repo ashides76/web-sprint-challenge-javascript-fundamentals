@@ -266,15 +266,30 @@ console.log(cuboid.surfaceArea()); // 130
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
  
 class CuboidMakerTwo{
-
+  constructor(arrg) {
+    this.length = arrg.length,
+    this.width = arrg.width,
+    this.height = arrg.height
+  }
+  volume() {
+    return this.length * this.width * this.height;
+  }
+  surfaceArea() {
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+  }
 }
 
-
+const cuboidTwo = new CuboidMakerTwo ({
+  length: 4,
+  width: 5,
+  height: 5
+})
+console.log(cuboidTwo)
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
